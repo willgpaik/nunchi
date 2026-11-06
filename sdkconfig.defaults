@@ -1,0 +1,11 @@
+# ESP32-P4 board: chip revision v1.x, 32 MB PSRAM in package, 32 MB flash
+CONFIG_IDF_TARGET="esp32p4"
+
+# Chip revision v1.x (v3.x needs a different build, see docs/hardware.md).
+# This also sets the CPU clock default to 360 MHz, the max for v1.x.
+CONFIG_ESP32P4_SELECTS_REV_LESS_V3=y
+CONFIG_ESP32P4_REV_MIN_100=y
+
+CONFIG_ESPTOOLPY_FLASHSIZE_32MB=y
+
+CONFIG_SPIRAM=y
